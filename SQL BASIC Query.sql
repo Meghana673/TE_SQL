@@ -1,7 +1,5 @@
 CREATE DATABASE ORG;
 
-
-
 USE ORG;
 
 CREATE TABLE Worker (
@@ -68,7 +66,10 @@ INSERT INTO Title
  (006, 'Lead', '2022-06-11 12:00:00'),
  (003, 'Lead', '2022-06-11 2:00:00');
 
+ create synonym works for Worker;
 
+  select * from works; 
+  
  select * from Worker; 
  select * from Bonus; 
  select * from Title; 
@@ -79,6 +80,7 @@ select FIRST_NAME AS WORKER_NAME FROM Worker;
 
 --Q-2. Write an SQL query to fetch “FIRST_NAME” from Worker table in upper case.
 SELECT UPPER(FIRST_NAME) FROM Worker;
+
 
 --Q-3. Write an SQL query to fetch unique values of DEPARTMENT from Worker table.
 SELECT  DISTINCT DEPARTMENT FROM Worker;
