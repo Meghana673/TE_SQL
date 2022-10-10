@@ -85,8 +85,6 @@ select * from Student_Dep;
 
 --CREATE 
 
-
-
 create sequence StudentID as int start with 100 increment by 1;
 
 insert into Student values(NEXT VALUE FOR StudentID,'Alice','CSE')

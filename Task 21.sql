@@ -17,6 +17,7 @@ INSERT INTO Salesman
 	(5003, 'Lauson Hen', 'San Jose', 0.12)
 
 select * from Salesman
+
 --1.	From the following table, create a view for those salespeople who belong to the city of New York. 
 
 CREATE VIEW people_in_newyork
