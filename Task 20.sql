@@ -74,7 +74,7 @@ update Student set DEPARTMENT=8 where SID=102;
 select SID,SName,DID,DName,DHead from Student inner join Student_Dept on DEPARTMENT=DID;
 
 
-
+--Complex View
 create view Student_Dep
 as
 select s.SID,s.SName,sd.DID,sd.DName,sd.DHead 
@@ -99,3 +99,24 @@ Select * from Student;
 
 
 
+--print the only date of given value
+SELECT DAY('2018-12-06 09:40:11') as Day_Output 
+
+--add the 4 year to the given year
+SELECT DATEADD(year, 4, '2022/05/05') as DateAdd_output
+
+-- difference between the year
+SELECT DATEDIFF(year, '2020/07/03', '2022/01/26') as Date_Difference
+
+
+
+
+--Gives the date and time of SQL server
+SELECT SYSDATETIME() as SysDateTime_Output
+
+--print the current date with time
+SELECT CURRENT_TIMESTAMP as Current_Date_Time
+
+--Check if the enter date is valid or not
+SELECT ISDATE('2022-10-07') as Valid_date_Output 
+SELECT ISDATE('Hiii!') as Invalid_date_Output 
